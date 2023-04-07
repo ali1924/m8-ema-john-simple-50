@@ -12,3 +12,9 @@ git push -u origin main
 git remote add origin https://github.com/ali1924/m8-ema-john-simple-50.git
 git branch -M main
 git push -u origin main
+
+
+************3**************
+git the clone korte hole 
+1. npm install korte hbe
+2. git remote set-url origin gitlink dite hobe
