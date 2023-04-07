@@ -6,4 +6,7 @@
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 0.005em;
+    background: rgba(255, 153, 0, 0.3);
+    position: sticky;
+    top: 0;
 }
