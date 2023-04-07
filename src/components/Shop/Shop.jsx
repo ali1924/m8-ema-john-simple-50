@@ -10,19 +10,25 @@ const Shop = () => {
         fetch('products.json').then(res => res.json()).then(data => setProducts(data));
     }, [])
     // console.log(products[3]);
-    useEffect(() => {
+    useEffect(() => { 
         const storedCart = getShoppingCart();
-        // console.log(storedCart);
-        // Step-1 get ID
+        const savedCart = [];
         for (const id in storedCart) {
+            // step-1 get id
             // console.log(id);
             // step-2 get the product by using id
             const addedProduct = products.find(product => product.id === id);
-            // console.log(savedProduct);
             // step-3 get quantity of the product
-            const quantity = storedCart[id];
-            addedProduct.quantity = quantity;
-            console.log(addedProduct);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                // step-4 add the added product to the saved cart
+                savedCart.push(addedProduct);
+
+            }
+            // console.log(addedProduct);
+            // step-5 set the cart
+            setCart(savedCart);
         }
     }, [products]);
 
