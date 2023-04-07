@@ -1,18 +1,22 @@
-.shop-container{
+.shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     /* background-color: rgb(172, 161, 172); */
     margin-left: 104px;
     margin-right: 82px;
-    margin-top: 118px;
+    /* position: relative; */
 }
-.product-container{
+
+.product-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 13px;
+    margin-top: 118px;
     /* background-color: rgb(96, 142, 183); */
 }
-.cart-container{
+
+.cart-container {
     /* background-color: rgb(72, 157, 126); */
     background: rgba(255, 153, 0, 0.3);
+    /* position:absolute; */
 }
