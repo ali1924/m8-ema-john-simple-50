@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cart.css';
-const Cart = ({cart}) => {
+const Cart = ({ cart }) => {
     // const cart= props.cart;***Option-1
     // console.log(product);
     // const { cart } = props;***option-2
@@ -8,6 +8,7 @@ const Cart = ({cart}) => {
 
     // const { id, img, name, price, quantity, ratings } = cart;
     // const { ratingsCount, seller, shipping, stock } = cart;
+    // console.log(cart);
     let totalPrice = 0;
     let totalShipping = 0;
     for (const product of cart) {
