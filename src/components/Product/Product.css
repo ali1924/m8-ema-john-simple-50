@@ -1,0 +1,21 @@
+.product {
+    width: 300px;
+    height: 640px;
+    background-color: aliceblue;
+}
+
+.product img {
+    height: 286px;
+    width: 286px;
+    padding: 7px;
+    background: url(ezgif.png);
+    border-radius: 8px;
+}
+.product-info {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left:14px;
+    color: #0E161A;
+}
