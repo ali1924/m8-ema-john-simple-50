@@ -1,14 +1,21 @@
 import React from 'react';
 import './ReviewItem.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart,faTrash,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 const ReviewItem = ({ product }) => {
-    const { id, img, name, quantity,price } = product;
+    const { id, img, name, quantity, price } = product;
     console.log(product);
     return (
         <div className='review-item'>
             <img src={img} alt="" />
-            <h2>{name}</h2>
-            <p>Price:${price}</p>
-            <p>Quantity:${quantity}</p>
+            <div className='review-details'>
+                <p className='product-title'>{name}</p>
+                <p>Price:<span className='orange-text'>${price}</span></p>
+                <p>Order Quantity:<span className='orange-text'>${quantity}</span></p>
+            </div>
+            <button className='btn-delete'>
+                <FontAwesomeIcon className='delete-icon' icon={faTrashAlt} />
+            </button>
             
         </div>
     );
