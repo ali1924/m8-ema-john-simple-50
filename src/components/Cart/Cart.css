@@ -10,3 +10,20 @@
     position: sticky;
     top: 0;
 }
+.btn-clear-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 48px;
+    gap: 4px;
+    background-color: #FF3030;
+    color:#FFFFFF;
+    font-size: 17px;
+    border-radius: 4px;
+}
+ .btn-clear-cart .delete-icon{
+    color: #FFFFFF;
+    height: 24px;
+    width: 24px;
+}
